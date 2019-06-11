@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 double vizeNotu = Double.parseDouble(etVizeNotu.getText().toString());
                 double finalButNotu = Double.parseDouble(etFinalButNotu.getText().toString());
 
-           //     System.out.println(vizeNotu + " -- " + finalButNotu);
 
                 double hamBasariNotu = 0.0;
                 double tStandartNotu = 0.0;
@@ -51,9 +50,13 @@ public class MainActivity extends AppCompatActivity {
 
                 harf = HarfeDonustur(hamBasariNotu,tStandartNotu,harf);
 
+                if(finalButNotu < 45){
+                    harf = "FF";
+                }
+
+
                 tvSonuc.setText(harf);
 
-             //   System.out.println(hamBasariNotu +" bb " + tStandartNotu + " hh " + harf);
             }
         });
 
@@ -290,7 +293,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        else if (tStandartNotu>=80 && tStandartNotu <=100){
+        else if (hamBasariNotu>=80 && hamBasariNotu <=100){ // ustun basari
             harf ="AA";
         }
 
