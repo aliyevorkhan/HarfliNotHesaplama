@@ -1,8 +1,12 @@
 # HarfliNotHesaplama
 
-ilk asama: sablon uygulama olusturulsun ve Tablo1 e gore hesaplama yapilsin (TAMAMLANDI)
-ikinci asama: 45 alti final/but notu kontrolu yapilsin, tersten hesaplama yapilabilsin (YAPILIYOR)
-ucuncu asama: Tablo2 ye gore hesaplama yapilabilsin (YAPILACAK)
+YAPILDI: </br>
+sablon uygulama olusturma ve Tablo1 e gore hesaplama yapma </br>
+45 alti final/but notu kontrolu </br>
+
+YAPILACAK: </br>
+tersten hesaplama </br>
+Tablo2 ye gore hesaplama</br>
 
 CIKTI: 
 
