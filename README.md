@@ -10,4 +10,4 @@ Tablo2 ye gore hesaplama</br>
 
 CIKTI: 
 
-![](https://media.giphy.com/media/Qs7zBo41dQsTxjw7hO/giphy.gif)
+![](https://media.giphy.com/media/fVQ5DkphIoOsOcovkG/giphy.gif)
