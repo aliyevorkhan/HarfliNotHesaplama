@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         final EditText etFinalButNotu= findViewById(R.id.etFinalButNotu);
         Button btnHesapla= findViewById(R.id.btnHesapla);
         final TextView tvSonuc = findViewById(R.id.tvSonuc);
-        ImageView ivLogo = findViewById(R.id.ivLogo);
+        //ImageView ivLogo = findViewById(R.id.ivLogo);
         //////////////////////////////////////////////////
 
-        ivLogo.setImageResource(R.drawable.logo);
+        //ivLogo.setImageResource(R.drawable.logo);
 
         btnHesapla.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,48 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/KTUblues"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="256px">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="250dp"
-            android:layout_height="256px"
-            android:text="KARADENİZ TEKNİK ÜNİVERSİTESİ \n \n BİLGİSAYAR MÜHENDİSLİĞİ"
-            android:textSize="18dp"
-            android:textColor="@color/colorPrimaryDark"
-            />
-
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="256px"
-            android:layout_height="256px"
-            tools:srcCompat="@drawable/logo" />
-
-    </LinearLayout>
+        android:layout_height="256px"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="\nKARADENİZ TEKNİK ÜNİVERSİTESİ \n BİLGİSAYAR MÜHENDİSLİĞİ"
+        android:textColor="@color/White"
+        android:textSize="18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp">
 
         <LinearLayout
-            android:layout_width="200dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <EditText
                 android:id="@+id/etSinifOrtalamasi"
                 android:layout_width="195dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
                 android:hint="sınıf ortalaması"
+
                 android:inputType="number"
                 android:textStyle="bold" />
 
@@ -50,6 +44,7 @@
                 android:id="@+id/etStandartSapma"
                 android:layout_width="195dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
                 android:hint="standart sapma"
                 android:inputType="number"
                 android:textStyle="bold" />
@@ -58,6 +53,7 @@
                 android:id="@+id/etVizeNotu"
                 android:layout_width="195dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
                 android:hint="vize notu"
                 android:inputType="number"
                 android:textStyle="bold" />
@@ -66,6 +62,7 @@
                 android:id="@+id/etFinalButNotu"
                 android:layout_width="195dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
                 android:hint="finat/bütünleme notu"
                 android:inputType="number"
                 android:textStyle="bold" />
@@ -74,22 +71,26 @@
                 android:id="@+id/btnHesapla"
                 android:layout_width="195dp"
                 android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:background="@color/KTUblues2"
+                android:textColor="@color/White"
                 android:text="HESAPLA"
                 android:textStyle="bold" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/tvSonuc"
-                android:layout_width="175dp"
-                android:layout_height="230dp"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:layout_marginTop="40dp"
                 android:text="Sonucu görüntüle"
+                android:textAlignment="center"
+                android:textColor="@color/White"
                 android:textSize="20dp"
-                android:textColor="@color/colorPrimaryDark"
                 android:textStyle="normal|bold" />
         </LinearLayout>
+
+
+
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
