@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText etFinalButNotu= findViewById(R.id.etFinalButNotu);
         etFinalButNotu.setFilters(new InputFilter[]{ new InputFilterMinMax("0", "100")});
         Button btnHesapla= findViewById(R.id.btnHesapla);
+        final Button btnClr= findViewById(R.id.btnclr);
         final TextView tvSonuc = findViewById(R.id.tvSonuc);
         //ImageView ivLogo = findViewById(R.id.ivLogo);
         //////////////////////////////////////////////////
@@ -49,11 +50,13 @@ public class MainActivity extends AppCompatActivity {
                     ortalamaDegeri = Double.parseDouble(etSinifOrtalamasi.getText().toString());
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
+                    ortalamaDegeri=101.0;
                 }
                 try {
                     standartSapma = Double.parseDouble(etStandartSapma.getText().toString());
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
+                    standartSapma=101.1;
                 }
                 try{
                     vizeNotu = Double.parseDouble(etVizeNotu.getText().toString());
@@ -61,16 +64,14 @@ public class MainActivity extends AppCompatActivity {
                 } catch (NumberFormatException e)
                 {
                     e.printStackTrace();
+                    vizeNotu=101.0;
                 }
                 try {
                     finalButNotu = Double.parseDouble(etFinalButNotu.getText().toString());
                 } catch (NumberFormatException e) {
                     e.printStackTrace();
+                    finalButNotu=101.0;
                 }
-
-
-
-
                 hamBasariNotu = HamBasariNotuHesapla(vizeNotu,finalButNotu, hamBasariNotu);
                 tStandartNotu = TStandartNotuHesapla(hamBasariNotu, ortalamaDegeri, standartSapma, tStandartNotu);
                 harf = HarfeDonustur(hamBasariNotu,tStandartNotu,harf);
@@ -79,12 +80,22 @@ public class MainActivity extends AppCompatActivity {
                     harf = "FF";
                 }
 
-
                 tvSonuc.setText(harf);
 
             }
         });
 
+        btnClr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                etVizeNotu.setText(null);
+                etFinalButNotu.setText(null);
+                etSinifOrtalamasi.setText(null);
+                etStandartSapma.setText(null);
+                tvSonuc.setText("Sonucu görüntüle");
+
+            }
+        });
     }
 
     public double HamBasariNotuHesapla(double vizeNotu, double finalButNotu, double hamBasariNotu){
