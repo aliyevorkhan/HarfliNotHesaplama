@@ -1,13 +1,3 @@
 # HarfliNotHesaplama
 
-YAPILDI: </br>
-sablon uygulama olusturma ve Tablo1 e gore hesaplama yapma </br>
-45 alti final/but notu kontrolu </br>
-
-YAPILACAK: </br>
-tersten hesaplama </br>
-Tablo2 ye gore hesaplama</br>
-
-CIKTI: 
-
-![](https://media.giphy.com/media/fVQ5DkphIoOsOcovkG/giphy.gif)
+<img src="demo.jpg" height="640" width="360">
