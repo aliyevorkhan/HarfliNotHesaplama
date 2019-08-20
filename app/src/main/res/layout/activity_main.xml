@@ -67,22 +67,39 @@
                 android:inputType="number"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btnHesapla"
-                android:layout_width="195dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="100dp"
-                android:background="@color/KTUblues2"
-                android:textColor="@color/White"
-                android:text="HESAPLA"
-                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnHesapla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/KTUblues2"
+                    android:text="HESAPLA"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnclr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/KTUblues2"
+                    android:text="TEMIZLE"
+                    android:textColor="@color/White"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
 
             <TextView
                 android:id="@+id/tvSonuc"
                 android:layout_width="match_parent"
                 android:layout_height="106dp"
-                android:layout_marginTop="40dp"
                 android:text="Sonucu görüntüle"
+                android:layout_marginTop="20dp"
                 android:textAlignment="center"
                 android:textColor="@color/White"
                 android:textSize="20dp"
