@@ -1,3 +1,3 @@
 # HarfliNotHesaplama
 
-<img src="demo.jpg" height="640" width="360">
+<img src="demo.jpeg" height="640" width="360">
